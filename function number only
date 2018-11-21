@@ -1,0 +1,8 @@
+<?php
+/* memfilter inputan untuk mengambil nilai angka yang ada pada inputan */
+	function numOnly($val){
+		$repNumber = str_split("!@#$%^&*()_-=+|\][[`~'\";:/?.>,<{}qwertyuioplkjhgfdsazxcvbnm");
+		return intval(str_replace($repNumber, '', $val));
+	}
+	echo numOnly('2f3/fs6_h'); /*output 236*/
+?>
