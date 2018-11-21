@@ -1,0 +1,10 @@
+<?php 
+
+	/*mengecek inputan apakah termasuk karakter (angka dan huruf) */
+	function cekChar($string){
+		return (preg_match("/[^A-Za-z0-9]/", $string)) ? "not_char" : "is_char";
+	}
+	echo cekChar('ada434'); /*output is_char*/
+	echo cekChar('ada4*#!34'); /*output not_char*/
+
+?>
