@@ -1,0 +1,8 @@
+<?php 
+	/* memfilter beberapa karakter yang memungkinkan untuk digunakan dalam injeksi sql */
+
+function repInjeksi($string){
+	    $repString = str_split("!@#$%^&*()_-=+|\][[`~'\";:/?.>,<{}");
+		return str_replace($repString, '', $string);
+	}
+?>
