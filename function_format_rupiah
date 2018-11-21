@@ -1,0 +1,7 @@
+<?php
+	/*merubah format angka ke format rupiah*/
+	function rp($a){
+		return number_format($a,0,".",".");
+	}
+  echo rp('1500000'); /* output 1.500.000*/
+?>
